@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Title -->
-  <title>Soporte Magnus</title>
+  <title>Portal Magnus</title>
 
   <!-- Favicon -->
   <link rel="icon" href="{% static 'img/core-img/favicon.png' %}">
@@ -25,6 +25,18 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  a.nav-brand img{
+    height: 80px;
+  }
+  div#accordionExample{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button.btn.btn-link.decotext {
+    text-decoration: none;
+  }
+
   </style>
 
 </head>
@@ -62,8 +74,8 @@
             <div class="top-header-content">
               <!-- Top Social Area -->
               <div class="top-social-area ml-auto">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/magnusgestioninmobiliaria/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <!--<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
               </div>
             </div>
@@ -81,7 +93,7 @@
           <!-- Classy Menu -->
           <nav class="classy-navbar justify-content-between" id="robertoNav">
           <!-- Logo -->
-            <a class="nav-brand" href="index.html"><img src="{% static 'img/core-img/logo.png' %}" alt=""></a>
+            <a class="nav-brand" href="index.html"><img src="{% static 'img/core-img/logohd.png' %}" alt=""></a>
             <!-- Navbar Toggler -->
             <div class="classy-navbar-toggler">
               <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -96,11 +108,15 @@
               <!-- Nav Start -->
               <div class="classynav">
                 <ul id="nav">
-                  <li class="active"><a href="./index.html">Home</a></li>
-                  <li><a href="./blog.html">Ventas</a></li>
-                  <li><a href="./about.html">Arriendos</a></li>
+                  <!--<li class="active"><a href="./index.html">Home</a></li>-->
+                  <li><a href="#">Ventas</a></li>
+                  <li><a href="#">Arriendos</a></li>
+                  <li><a href="#">Información Subsidios</a></li>
+                  <li><a href="https://docs.google.com/spreadsheets/d/1Q4bvu6IN7AP1t2vp4xf2wLULu3c0Ct88Q890ScM5fuc/edit?usp=sharing">Información Casas</a></li>
+                  <li><a href="#">Ingreso Clientes</a></li>
                   <!--<li><a href="./contact.html">Contáctanos</a></li>-->
                 </ul>
+                <button type="button" class="btn btn-info">Log Out</button>
 
               </div>
               <!-- Nav End -->
@@ -118,7 +134,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content text-center">
-                        <h2 class="page-title">Soporte Magnus</h2>
+                        <h2 class="page-title">Portal Magnus</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
                                 <li class="breadcrumb-item"><a href="index.html">Soporte Magnus</a></li>
@@ -136,56 +152,109 @@
     <section class="roberto-about-us-area section-padding-100-100" align="center">
         <div class="container" align="center">
             <div class="row align-items-center" align="center">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Contado</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Subsidio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Crédito Hipotecario</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact2-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false">Mixto</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis soluta optio vel tempora, officia culpa repellendus aperiam laborum maxime minus nesciunt minima natus, nisi ea autem pariatur perspiciatis doloribus. Rem.</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eveniet commodi praesentium aspernatur quam tempora possimus unde dolores nam, voluptas minus, explicabo nobis labore cumque maiores minima porro, dolore et!</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui delectus rerum deleniti? Qui quibusdam hic temporibus sit, non labore, deserunt corporis, possimus commodi aspernatur facilis, ut modi deleniti ipsam error.</div>
+  <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui delectus rerum deleniti? Qui quibusdam hic temporibus sit, non labore, deserunt corporis, possimus commodi aspernatur facilis, ut modi deleniti ipsam error.</div>
+</div>
 
+              <!-- start cards
               <div class="accordion" id="accordionExample">
+
+                <br>
                 <div class="card" align="center">
+
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Collapsible Group Item #1
+                      <button class="btn btn-link decotext" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h4>Contado</h4>
                       </button>
                     </h2>
                   </div>
 
                   <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="card-body" align="left">
+                      <p>* Entes involucrados:</p>
+                      <p>* Documentos Necesarios para la venta: </p>
+                      <p>* Flujo del servicio: </p>
+                      <p>* Tiempo estimado optimista y pesimista: </p>
                     </div>
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2
+                      <button class="btn btn-link collapsed decotext" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4>Subsidio</h4>
                       </button>
                     </h2>
                   </div>
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="card-body" align="left">
+                      <p>Entes involucrados</p>
+                      <p>Documentos Necesarios para la venta:</p>
+                      <p>Flujo del servicio:</p>
+                      <p>Tiempo estimado optimista y pesimista</p>
                     </div>
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Collapsible Group Item #3
+                      <button class="btn btn-link collapsed decotext" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h4>Crédito Hipotecario</h4>
                       </button>
                     </h2>
                   </div>
                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="card-body" align="left">
+                      <p>Entes involucrados</p>
+                      <p>Documentos Necesarios para la venta:</p>
+                      <p>Flujo del servicio:</p>
+                      <p>Tiempo estimado optimista y pesimista</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed decotext" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h4>Ventas Mixtas</h4>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body" align="left">
+                      <p>Entes involucrados</p>
+                      <p>Documentos Necesarios para la venta:</p>
+                      <p>Flujo del servicio:</p>
+                      <p>Tiempo estimado optimista y pesimista</p>
                     </div>
                   </div>
                 </div>
               </div>
+               end cards -->
+
 
             </div>
         </div>
     </section>
+
     <!-- About Us Area End -->
 
     <!-- Call To Action Area Start -->
@@ -217,9 +286,9 @@
                 <div class="row align-items-baseline justify-content-between">
                     <!-- Single Footer Widget Area -->
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-80">
+                        <div class="single-footer-widget mb-80" align="center">
                             <!-- Footer Logo -->
-                            <a href="#" class="footer-logo"><img src="{% static 'img/core-img/logo2.png' %}" alt=""></a>
+                            <a href="#" class="footer-logo"><img src="{% static 'img/core-img/logohd_blanco.png' %}" alt=""></a>
 
                             <h4>+56 9 59217038</h4>
                             <span>makarena.munoz.g@gmail.com</span>
@@ -233,17 +302,17 @@
                             <!-- Widget Title -->
                             <h5 class="widget-title">Our Blog</h5>
 
-                            <!-- Single Blog Area -->
+                            <!--Single Blog Area -->
                             <div class="latest-blog-area">
                                 <a href="#" class="post-title">Freelance Design Tricks How</a>
                                 <span class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i> Jan 02, 2019</span>
                             </div>
 
                             <!-- Single Blog Area -->
-                            <div class="latest-blog-area">
+                            <!--<div class="latest-blog-area">
                                 <a href="#" class="post-title">Free Advertising For Your Online</a>
                                 <span class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i> Jan 02, 2019</span>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
 
@@ -255,13 +324,36 @@
 
                             <!-- Footer Nav -->
                             <ul class="footer-nav">
-                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> About Us</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Our Room</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Career</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> FAQs</a></li>
+                                <li><a href="http://subsidioschile.com" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i> Info Subsidios</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Otro</a></li>
+
                             </ul>
                         </div>
                     </div>
+
+                    <div class="container">
+            <div class="copywrite-content">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-8">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
                 </div>

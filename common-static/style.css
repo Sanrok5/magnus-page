@@ -32,6 +32,10 @@ Last Update: Feb 9, 2019
 - 17.0 Widget Area CSS
 - 18.0 Breadcrumb Area CSS
 - 19.0 Blog Area CSS
+-colors:
+  -primary:d42a2a;
+  -secondary:1b6dc1;
+
 --------------------------------------------- */
 /* Import Fonts & All CSS */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
@@ -511,7 +515,7 @@ input:focus {
   z-index: 1;
   width: 100%;
   height: 50px;
-  background-color: #0e2737; }
+  background-color: #d42a2a; }
   .top-header-area .top-header-content {
     display: -webkit-box;
     display: -ms-flexbox;
