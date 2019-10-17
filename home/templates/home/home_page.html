@@ -36,8 +36,16 @@
   button.btn.btn-link.decotext {
     text-decoration: none;
   }
+  @media only screen and (max-width: 991px){
+
+    a.nav-brand img{
+    height: 60px;
+  }
+
+  }
 
   </style>
+
 
 </head>
 
@@ -74,7 +82,7 @@
             <div class="top-header-content">
               <!-- Top Social Area -->
               <div class="top-social-area ml-auto">
-                <a href="https://www.facebook.com/magnusgestioninmobiliaria/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/magnusgestioninmobiliaria/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> magnusgestioninmobiliaria</a>
                 <!--<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
               </div>
@@ -93,7 +101,7 @@
           <!-- Classy Menu -->
           <nav class="classy-navbar justify-content-between" id="robertoNav">
           <!-- Logo -->
-            <a class="nav-brand" href="index.html"><img src="{% static 'img/core-img/logohd.png' %}" alt=""></a>
+            <a class="nav-brand" href="#"><img src="{% static 'img/core-img/logohd.png' %}" alt=""></a>
             <!-- Navbar Toggler -->
             <div class="classy-navbar-toggler">
               <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -109,14 +117,29 @@
               <div class="classynav">
                 <ul id="nav">
                   <!--<li class="active"><a href="./index.html">Home</a></li>-->
-                  <li><a href="#">Ventas</a></li>
-                  <li><a href="#">Arriendos</a></li>
-                  <li><a href="#">Información Subsidios</a></li>
-                  <li><a href="https://docs.google.com/spreadsheets/d/1Q4bvu6IN7AP1t2vp4xf2wLULu3c0Ct88Q890ScM5fuc/edit?usp=sharing">Información Casas</a></li>
-                  <li><a href="#">Ingreso Clientes</a></li>
+                  <li class="cn-dropdown-item has-down"><a href="#">Portal</a>
+                    <ul class="dropdown">
+                      <li><a href="https://docs.google.com/spreadsheets/d/1Q4bvu6IN7AP1t2vp4xf2wLULu3c0Ct88Q890ScM5fuc/edit?usp=sharing" target="_blank">Información Casas</a></li>
+                      <li><a href="https://docs.google.com/spreadsheets/d/1oVpnxLDd95h5lPEMm0nNIama5JT6b41TZUCaXZfJ-1U/edit?usp=sharing" target="_blank">Ingreso Clientes</a></li>
+                      <li><a href="https://trello.com/invite/b/dcr8HaGC/5382b1032428e464884c43bb2151ce93/soporte-gestion-magnus" target="_blank">Estado de clientes</a></li>
+
+                      <li class="has-down"><a href="#">Herramientas PC</a>
+                      <ul class="dropdown">
+                        <li><a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a></li>
+                        <li><a href="https://www.google.com/search?q=calculadora&oq=cal&aqs=chrome.0.69i59l3j69i61j69i60j69i65.952j0j4&sourceid=chrome&ie=UTF-8" target="_blank">Caluladora</a></li>
+                      </ul>
+                      <span class="dd-trigger"></span></li>
+                    </ul>
+                    <span class="dd-trigger"></span>
+                  </li>
+                  <li><a class="nav-link js-scroll-trigger animated fadeInDown" href="#ventas">Ventas</a></li>
+                  <li><a class="nav-link js-scroll-trigger animated fadeInDown" href="#arriendos">Arriendos</a></li>
+                  <li><a class="nav-link js-scroll-trigger animated fadeInDown" href="#informaciones">Información Subsidios</a></li>
+
+                  <li><a href=""><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
                   <!--<li><a href="./contact.html">Contáctanos</a></li>-->
                 </ul>
-                <button type="button" class="btn btn-info">Log Out</button>
+                <!--<button type="button" class="btn btn-info">Log Out</button>-->
 
               </div>
               <!-- Nav End -->
@@ -137,7 +160,7 @@
                         <h2 class="page-title">Portal Magnus</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="index.html">Soporte Magnus</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Soporte Magnus{{ home_homepage.introduction }}</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Ventas</li>
                             </ol>
                         </nav>
@@ -149,111 +172,132 @@
     <!-- Breadcrumb Area End -->
 
     <!-- About Us Area Start -->
-    <section class="roberto-about-us-area section-padding-100-100" align="center">
+    <section class="roberto-about-us-area section-padding-100-100" align="center" id="ventas">
+      <h4 align="center">Ventas</h4>
         <div class="container" align="center">
             <div class="row align-items-center" align="center">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Contado</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Subsidio</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Crédito Hipotecario</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact2-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false">Mixto</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis soluta optio vel tempora, officia culpa repellendus aperiam laborum maxime minus nesciunt minima natus, nisi ea autem pariatur perspiciatis doloribus. Rem.</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eveniet commodi praesentium aspernatur quam tempora possimus unde dolores nam, voluptas minus, explicabo nobis labore cumque maiores minima porro, dolore et!</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui delectus rerum deleniti? Qui quibusdam hic temporibus sit, non labore, deserunt corporis, possimus commodi aspernatur facilis, ut modi deleniti ipsam error.</div>
-  <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui delectus rerum deleniti? Qui quibusdam hic temporibus sit, non labore, deserunt corporis, possimus commodi aspernatur facilis, ut modi deleniti ipsam error.</div>
-</div>
-
-              <!-- start cards
-              <div class="accordion" id="accordionExample">
-
-                <br>
-                <div class="card" align="center">
-
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link decotext" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h4>Contado</h4>
-                      </button>
-                    </h2>
-                  </div>
-
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body" align="left">
-                      <p>* Entes involucrados:</p>
-                      <p>* Documentos Necesarios para la venta: </p>
-                      <p>* Flujo del servicio: </p>
-                      <p>* Tiempo estimado optimista y pesimista: </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed decotext" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h4>Subsidio</h4>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body" align="left">
-                      <p>Entes involucrados</p>
-                      <p>Documentos Necesarios para la venta:</p>
-                      <p>Flujo del servicio:</p>
-                      <p>Tiempo estimado optimista y pesimista</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed decotext" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <h4>Crédito Hipotecario</h4>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body" align="left">
-                      <p>Entes involucrados</p>
-                      <p>Documentos Necesarios para la venta:</p>
-                      <p>Flujo del servicio:</p>
-                      <p>Tiempo estimado optimista y pesimista</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed decotext" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <h4>Ventas Mixtas</h4>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                    <div class="card-body" align="left">
-                      <p>Entes involucrados</p>
-                      <p>Documentos Necesarios para la venta:</p>
-                      <p>Flujo del servicio:</p>
-                      <p>Tiempo estimado optimista y pesimista</p>
-                    </div>
-                  </div>
-                </div>
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Contado</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Subsidio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Crédito Hipotecario</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact2-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false">Mixto</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis soluta optio vel tempora, officia culpa repellendus aperiam laborum maxime minus nesciunt minima natus, nisi ea autem pariatur perspiciatis doloribus. Rem.</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eveniet commodi praesentium aspernatur quam tempora possimus unde dolores nam, voluptas minus, explicabo nobis labore cumque maiores minima porro, dolore et!</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui delectus rerum deleniti? Qui quibusdam hic temporibus sit, non labore, deserunt corporis, possimus commodi aspernatur facilis, ut modi deleniti ipsam error.</div>
+                <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui delectus rerum deleniti? Qui quibusdam hic temporibus sit, non labore, deserunt corporis, possimus commodi aspernatur facilis, ut modi deleniti ipsam error.</div>
               </div>
-               end cards -->
 
 
             </div>
         </div>
     </section>
+
+
+    <!-- About Us Area Start -->
+    <section class="roberto-about-us-area section-padding-100-100" align="center" id="arriendos">
+      <h4 align="center">Arriendos</h4>
+        <div class="container" align="center">
+            <div class="row align-items-center" align="center">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Documentos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Subsidios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contrato de Arriendo</a>
+                </li>
+
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis soluta optio vel tempora, officia culpa repellendus aperiam laborum maxime minus nesciunt minima natus, nisi ea autem pariatur perspiciatis doloribus. Rem.</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eveniet commodi praesentium aspernatur quam tempora possimus unde dolores nam, voluptas minus, explicabo nobis labore cumque maiores minima porro, dolore et!</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui delectus rerum deleniti? Qui quibusdam hic temporibus sit, non labore, deserunt corporis, possimus commodi aspernatur facilis, ut modi deleniti ipsam error.</div>
+
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Area Start -->
+    <section class="roberto-about-us-area section-padding-100-100" align="center" id="informaciones">
+      <h4 align="center">Información subsidios</h4>
+        <div class="container" align="center">
+            <div class="row align-items-center" align="center">
+              <!--tab information-->
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">DS1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">DS19</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">DS49</a>
+                </li>
+
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis soluta optio vel tempora, officia culpa repellendus aperiam laborum maxime minus nesciunt minima natus, nisi ea autem pariatur perspiciatis doloribus. Rem.</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eveniet commodi praesentium aspernatur quam tempora possimus unde dolores nam, voluptas minus, explicabo nobis labore cumque maiores minima porro, dolore et!</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui delectus rerum deleniti? Qui quibusdam hic temporibus sit, non labore, deserunt corporis, possimus commodi aspernatur facilis, ut modi deleniti ipsam error.</div>
+
+              </div>
+              <!--end tab information-->
+              <p><br><h5 align="center">Tabla comparativa</h5></p>
+
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 
     <!-- About Us Area End -->
 
@@ -375,6 +419,89 @@ Copyright ©<script>document.write(new Date().getFullYear());</script> All right
     <!-- Active -->
     <script src="{% static 'js/default-assets/active.js' %}"></script>
 
+
+
 </body>
 
 </html>
+
+
+
+
+
+              <!-- start cards
+              <div class="accordion" id="accordionExample">
+
+                <br>
+                <div class="card" align="center">
+
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link decotext" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h4>Contado</h4>
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body" align="left">
+                      <p>* Entes involucrados:</p>
+                      <p>* Documentos Necesarios para la venta: </p>
+                      <p>* Flujo del servicio: </p>
+                      <p>* Tiempo estimado optimista y pesimista: </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed decotext" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4>Subsidio</h4>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body" align="left">
+                      <p>Entes involucrados</p>
+                      <p>Documentos Necesarios para la venta:</p>
+                      <p>Flujo del servicio:</p>
+                      <p>Tiempo estimado optimista y pesimista</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed decotext" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h4>Crédito Hipotecario</h4>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body" align="left">
+                      <p>Entes involucrados</p>
+                      <p>Documentos Necesarios para la venta:</p>
+                      <p>Flujo del servicio:</p>
+                      <p>Tiempo estimado optimista y pesimista</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed decotext" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h4>Ventas Mixtas</h4>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body" align="left">
+                      <p>Entes involucrados</p>
+                      <p>Documentos Necesarios para la venta:</p>
+                      <p>Flujo del servicio:</p>
+                      <p>Tiempo estimado optimista y pesimista</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               end cards -->
